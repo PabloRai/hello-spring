@@ -10,7 +10,7 @@ import java.util.Optional;
 @Service
 public class CourseService implements CrudService<Course> {
 
-    private CourseRepository repository;
+    private final CourseRepository repository;
 
     public CourseService(CourseRepository courseRepository) {
         repository = courseRepository;

@@ -8,7 +8,7 @@ import java.util.List;
 @Repository
 public class CourseRepository implements CrudRepository<Course> {
 
-    private List<Course> courses;
+    private final List<Course> courses;
 
     public CourseRepository() {
         courses = new ArrayList<>();
